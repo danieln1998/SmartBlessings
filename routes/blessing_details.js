@@ -24,7 +24,17 @@ router.post("/add_blessing_details", function(request, response, next){
 	console.log("textColor "+textColor);
 	console.log("bgColor "+bgColor);
     
-      
+      	if(full_name.indexOf('"')!=-1){
+
+		full_name = full_name.replace(/"/g, '\\"');
+
+	}
+	if(the_blessing.indexOf('"')!=-1){
+          
+  
+	the_blessing = the_blessing.replace(/"/g, '\\"');
+
+	}
 	
 	
 if(full_name.length>0&&the_blessing.length>0){
