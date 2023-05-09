@@ -67,7 +67,7 @@ WHERE the_blessing != '' &&identification =0
 				response.render('d', {title:'data',  dp:data,cnt:cnt1,textColor:data[cnt1].textColor,bgColor:data[cnt1].bgColor});
 
 				var q = `
-			UPDATE SmartBlessings  SET identification = 1 , time="${timetotal}"  WHERE id = "${data[cnt1].id}"
+			UPDATE SmartBlessings  SET identification = 1 , timee="${timetotal}"  WHERE id = "${data[cnt1].id}"
 			`;
 		 
 		 
