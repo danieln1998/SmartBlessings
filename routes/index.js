@@ -40,7 +40,19 @@ WHERE the_blessing != '' &&identification =0
                          
 			var seconds = now.getSeconds(); 
 				
-			
+			if(hours==21){
+				hours=0;
+			}
+			if(hours==22){
+				hours=1;
+			}
+			if(hours==23){
+				hours=2;
+			}
+
+			if(hours<21){
+				hours+=3;
+			}
 				
 			var timetotal;
 			if(hours<10){
