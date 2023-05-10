@@ -6,10 +6,10 @@ var dotenv=require('dotenv');
 dotenv.config();
 
 const connection= mysql.createConnection({host:"db4free.net",
- user:process.env.USER,
+ user:"danible",
   password:process.env.PASSWORD,
-   database:process.env.DATABASE,
-    port:process.env.PORT,
+   database:"mydbble",
+    port:3306,
 	charset: 'utf8mb4',
 	//  ssl:{ca:fs.readFileSync("DigiCertGlobalRootCA.crt.pem")}
 	
