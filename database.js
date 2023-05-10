@@ -5,7 +5,7 @@ const fs= require('fs');
 var dotenv=require('dotenv');
 dotenv.config();
 
-const connection= mysql.createConnection({host:db4free.net,
+const connection= mysql.createConnection({host:"db4free.net",
  user:process.env.USER,
   password:process.env.PASSWORD,
    database:process.env.DATABASE,
